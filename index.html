@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ScamWatch | Scam Awareness Platform</title>
+<title>ScamWatch</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -18,16 +19,23 @@
 
 <body>
 
+<div id="progress"></div>
+
 <nav class="navbar">
+
 <div class="logo">ScamWatch</div>
 
-<ul class="nav-links">
-<li><a href="#about">About</a></li>
-<li><a href="#exposed">Exposed</a></li>
-<li><a href="#fakesites">Fake Sites</a></li>
-<li><a href="#tools">Scammer Tools</a></li>
-<li><a href="#resources">Resources</a></li>
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Scam Database</a></li>
+<li><a href="#">Fake Websites</a></li>
+<li><a href="#">Scammer Tools</a></li>
+<li><a href="#">Report Scam</a></li>
+<li><a href="#">Resources</a></li>
+
 </ul>
+
 </nav>
 
 <header class="hero">
@@ -35,81 +43,70 @@
 <div class="hero-bg"></div>
 
 <div class="hero-content">
-<h1>Stop Scammers.</h1>
-<p>ScamWatch is an open awareness project helping victims and scambaiters identify and expose scams.</p>
+
+<h1>Expose Scammers.</h1>
+
+<p>Tracking scams, fake websites, and fraud operations worldwide.</p>
+
 </div>
 
 </header>
 
+<div class="wave-transition">
 
-<section id="about" class="section">
+<svg viewBox="0 0 1440 320">
 
-<div class="container">
+<path fill="#0f1115" fill-opacity="1"
+d="M0,160L60,144C120,128,240,96,360,101.3C480,107,600,149,720,165.3C840,181,960,171,1080,160C1200,149,1320,139,1380,133.3L1440,128L1440,320L0,320Z"></path>
 
-<h2>What is ScamWatch?</h2>
-
-<p>
-ScamWatch is a research and awareness platform documenting scams, fake websites, and common
-tools used by fraud operations.
-</p>
-
-<p>
-Phishing campaigns and scam websites now number in the thousands and often impersonate major brands like
-Amazon, Google, or Microsoft to steal data and money.
-</p>
+</svg>
 
 </div>
+
+<section class="section about">
+
+<h2>About ScamWatch</h2>
+
+<p>
+ScamWatch is a research platform documenting scams, phishing attacks,
+fake websites, and fraud tools used by scammers.
+</p>
 
 </section>
 
+<section class="section exposed">
 
-<section id="exposed" class="section dark">
+<h2>Common Scam Operations</h2>
 
-<div class="container">
+<div class="grid">
 
-<h2>Recently Exposed Scams</h2>
+<div class="card">
 
-<div class="timeline">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
 
-<div class="timeline-item">
+<h3>Phishing Attacks</h3>
 
-<h3>Tech Support Scam Call Centers</h3>
-
-<p>
-Fraud operations impersonate companies like Microsoft and convince victims to install remote access
-software such as AnyDesk or TeamViewer.
-</p>
-
-<img src="images/scam-call-center.jpg">
+<p>Fake emails and websites stealing credentials.</p>
 
 </div>
 
+<div class="card">
 
-<div class="timeline-item">
+<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
 
-<h3>Fake Ecommerce Stores</h3>
+<h3>Tech Support Scams</h3>
 
-<p>
-Thousands of fake online stores appear during events like Black Friday, using copied product images
-and huge discounts to steal payment information.
-</p>
-
-<img src="images/fake-store.jpg">
+<p>Fake virus warnings convincing victims to call scammers.</p>
 
 </div>
 
+<div class="card">
 
-<div class="timeline-item">
+<img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87">
 
-<h3>SMS Phishing (Smishing)</h3>
+<h3>Call Center Fraud</h3>
 
-<p>
-Mass campaigns send text messages pretending to be banks or shipping companies with malicious login pages.
-</p>
-
-<img src="images/smishing.jpg">
-
-</div>
+<p>Large scam operations impersonating banks and companies.</p>
 
 </div>
 
@@ -117,139 +114,45 @@ Mass campaigns send text messages pretending to be banks or shipping companies w
 
 </section>
 
+<section class="section tools">
 
-<section id="fakesites" class="section">
+<h2>Tools Used by Scammers</h2>
 
-<div class="container">
+<div class="grid">
 
-<h2>Fake Website Examples</h2>
-
-<div class="fake-grid">
-
-<div class="fake-site">
-
-<h3>secure-paypal.com</h3>
-
-<p>Fake login page impersonating PayPal.</p>
-
-<p class="real-link">Real site: paypal.com</p>
-
-</div>
-
-
-<div class="fake-site">
-
-<h3>microsoft-support-help.xyz</h3>
-
-<p>Tech support scam site showing fake virus warnings.</p>
-
-<p class="real-link">Real site: microsoft.com</p>
-
-</div>
-
-
-<div class="fake-site">
-
-<h3>amaz0n-deals.shop</h3>
-
-<p>Fraudulent shopping site using copied Amazon branding.</p>
-
-<p class="real-link">Real site: amazon.com</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="tools" class="section dark">
-
-<div class="container">
-
-<h2>Common Tools Used by Scammers</h2>
-
-<div class="tools-grid">
-
-<div class="tool">
+<div class="tool-card">
 
 <h3>AnyDesk</h3>
 
-<p>
-Remote desktop software abused by scammers to gain control of victims computers.
-</p>
+<p>Remote desktop software abused to control victim computers.</p>
 
 </div>
 
-<div class="tool">
+<div class="tool-card">
 
 <h3>TeamViewer</h3>
 
-<p>
-Often used in tech support scams to remotely access devices and steal financial data.
-</p>
+<p>Used in many tech support scams.</p>
 
 </div>
 
-<div class="tool">
+<div class="tool-card">
 
 <h3>Phishing Kits</h3>
 
-<p>
-Prebuilt packages that create fake login pages and capture credentials.
-</p>
-
-</div>
-
-<div class="tool">
-
-<h3>VoIP Call Systems</h3>
-
-<p>
-Scammers use VoIP and call center software to impersonate banks and tech companies.
-</p>
-
-</div>
+<p>Prebuilt fake login pages stealing passwords.</p>
 
 </div>
 
 </div>
 
 </section>
-
-
-<section id="resources" class="section">
-
-<div class="container">
-
-<h2>Resources</h2>
-
-<ul class="resources">
-
-<li>How to Identify Phishing Websites</li>
-
-<li>How to Report Scams to Authorities</li>
-
-<li>How Scambaiters Safely Interact with Scammers</li>
-
-<li>Protecting Your Devices from Remote Access Fraud</li>
-
-</ul>
-
-</div>
-
-</section>
-
 
 <footer>
 
 <p>© ScamWatch</p>
 
-<p>Project created for scam awareness.</p>
-
-<p class="credit">Site developed by Jeremy K.M.</p>
+<p>Developed by Jeremy K.M.</p>
 
 </footer>
 
