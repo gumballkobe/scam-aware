@@ -6,7 +6,7 @@ font-family:Inter;
 }
 
 body{
-background:#0b0e13;
+background:#0a0d12;
 color:white;
 overflow-x:hidden;
 }
@@ -27,7 +27,7 @@ width:100%;
 display:flex;
 justify-content:space-between;
 padding:20px 60px;
-background:rgba(10,10,15,.5);
+background:rgba(10,10,15,.6);
 backdrop-filter:blur(10px);
 z-index:10;
 }
@@ -41,7 +41,6 @@ list-style:none;
 .navbar a{
 text-decoration:none;
 color:white;
-opacity:.8;
 }
 
 .hero{
@@ -61,20 +60,36 @@ background:url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b") cent
 opacity:.25;
 }
 
-.hero-content h1{
+.hero-content{
+z-index:2;
+}
+
+.hero h1{
 font-size:80px;
 margin-bottom:20px;
 }
 
-.wave-transition svg{
+.wave-wrapper svg{
+width:100%;
 display:block;
-margin-top:-1px;
+fill:#0a0d12;
 }
 
-.section{
+section{
 padding:120px 80px;
 max-width:1200px;
 margin:auto;
+}
+
+.stat-grid{
+display:flex;
+justify-content:space-around;
+margin-top:60px;
+}
+
+.stat h1{
+font-size:50px;
+color:#00e5ff;
 }
 
 .grid{
@@ -85,15 +100,14 @@ margin-top:60px;
 }
 
 .card{
-background:#151922;
+background:#141821;
 border-radius:10px;
 overflow:hidden;
-transition:.4s;
 }
 
 .card img{
 width:100%;
-height:180px;
+height:200px;
 object-fit:cover;
 }
 
@@ -106,13 +120,14 @@ padding:0 20px 20px 20px;
 opacity:.8;
 }
 
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 20px 40px rgba(0,0,0,.5);
+.operation img{
+width:100%;
+margin-top:40px;
+border-radius:10px;
 }
 
 .tool-card{
-background:#151922;
+background:#141821;
 padding:30px;
 border-radius:10px;
 }
