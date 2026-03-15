@@ -3,295 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scam Awareness Network</title>
 
+<title>ScamWatch | Scam Awareness Platform</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-<style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0b0f17;
-color:white;
-overflow-x:hidden;
-}
-
-/* NAVBAR */
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
-display:flex;
-justify-content:space-between;
-padding:18px 50px;
-z-index:1000;
-}
-
-nav h1{
-font-weight:800;
-letter-spacing:2px;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:30px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:500;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#4fd1ff;
-}
-
-/* HERO */
-
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:
-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
-url("hero-placeholder.jpg");
-background-size:cover;
-background-attachment:fixed;
-}
-
-.hero h2{
-font-size:55px;
-max-width:900px;
-font-weight:800;
-}
-
-.hero p{
-margin-top:20px;
-font-size:20px;
-opacity:.8;
-}
-
-/* SECTIONS */
-
-section{
-padding:120px 10%;
-}
-
-.section-title{
-font-size:36px;
-margin-bottom:50px;
-font-weight:700;
-}
-
-/* GRID */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-}
-
-.card{
-background:#121a26;
-padding:30px;
-border-radius:12px;
-transition:0.4s;
-border:1px solid rgba(255,255,255,0.05);
-}
-
-.card:hover{
-transform:translateY(-10px) scale(1.02);
-box-shadow:0 20px 40px rgba(0,0,0,0.5);
-}
-
-.card img{
-width:100%;
-border-radius:8px;
-margin-bottom:15px;
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-/* SCROLL PARALLAX STRIP */
-
-.parallax{
-height:300px;
-background:url("placeholder2.jpg");
-background-size:cover;
-background-attachment:fixed;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-font-weight:700;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:50px;
-background:#070a10;
-font-size:14px;
-opacity:0.7;
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-nav{
-padding:15px 20px;
-}
-
-.hero h2{
-font-size:34px;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-section{
-padding:100px 8%;
-}
-
-}
-
-</style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<nav class="navbar">
+<div class="logo">ScamWatch</div>
 
-<nav>
-<h1>SCAMWATCH</h1>
-<ul>
+<ul class="nav-links">
 <li><a href="#about">About</a></li>
 <li><a href="#exposed">Exposed</a></li>
-<li><a href="#fake-sites">Fake Sites</a></li>
-<li><a href="#real-sites">Real Services</a></li>
+<li><a href="#fakesites">Fake Sites</a></li>
 <li><a href="#tools">Scammer Tools</a></li>
+<li><a href="#resources">Resources</a></li>
 </ul>
 </nav>
 
+<header class="hero">
 
-<!-- HERO -->
+<div class="hero-bg"></div>
 
-<div class="hero">
-
-<div>
-<h2>Fighting Online Scams Through Awareness</h2>
-<p>Helping victims, researchers, and scambaiters stay informed.</p>
+<div class="hero-content">
+<h1>Stop Scammers.</h1>
+<p>ScamWatch is an open awareness project helping victims and scambaiters identify and expose scams.</p>
 </div>
 
-</div>
+</header>
 
 
-<!-- ABOUT -->
+<section id="about" class="section">
 
-<section id="about">
+<div class="container">
 
-<h2 class="section-title">About This Project</h2>
+<h2>What is ScamWatch?</h2>
 
 <p>
-ScamWatch is an independent awareness project dedicated to documenting scam operations,
-educating the public, and assisting scam baiters in identifying fraudulent tactics.
+ScamWatch is a research and awareness platform documenting scams, fake websites, and common
+tools used by fraud operations.
 </p>
-
-<br><br>
 
 <p>
-This project tracks known scam techniques including phishing websites,
-fake technical support services, and social engineering attacks.
+Phishing campaigns and scam websites now number in the thousands and often impersonate major brands like
+Amazon, Google, or Microsoft to steal data and money.
 </p>
-
-</section>
-
-
-<!-- PARALLAX -->
-
-<div class="parallax">
-Exposing Fraudulent Operations
-</div>
-
-
-<!-- EXPOSED SCAMMERS -->
-
-<section id="exposed">
-
-<h2 class="section-title">Recently Exposed Scammers</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="placeholder-scammer1.jpg">
-<h3>Fake Tech Support Call Centers</h3>
-<p>
-Large call centers impersonating companies like Microsoft and Apple to trick victims into paying fake repair fees.
-</p>
-</div>
-
-<div class="card">
-<img src="placeholder-scammer2.jpg">
-<h3>Phishing Infrastructure</h3>
-<p>
-Networks hosting thousands of fake login pages designed to steal passwords and financial data.
-</p>
-</div>
-
-<div class="card">
-<img src="placeholder-scammer3.jpg">
-<h3>Gift Card Fraud Rings</h3>
-<p>
-Groups targeting elderly victims and demanding payment through gift cards.
-</p>
-</div>
 
 </div>
 
 </section>
 
 
-<!-- FAKE SITES -->
+<section id="exposed" class="section dark">
 
-<section id="fake-sites">
+<div class="container">
 
-<h2 class="section-title">Common Scam Websites</h2>
+<h2>Recently Exposed Scams</h2>
 
-<div class="grid">
+<div class="timeline">
 
-<div class="card">
-<h3>Fake Antivirus Support</h3>
-<p>Often appear through pop-ups claiming your computer is infected.</p>
+<div class="timeline-item">
+
+<h3>Tech Support Scam Call Centers</h3>
+
+<p>
+Fraud operations impersonate companies like Microsoft and convince victims to install remote access
+software such as AnyDesk or TeamViewer.
+</p>
+
+<img src="images/scam-call-center.jpg">
+
 </div>
 
-<div class="card">
-<h3>Fake Banking Login Pages</h3>
-<p>Designed to steal login credentials through phishing.</p>
+
+<div class="timeline-item">
+
+<h3>Fake Ecommerce Stores</h3>
+
+<p>
+Thousands of fake online stores appear during events like Black Friday, using copied product images
+and huge discounts to steal payment information.
+</p>
+
+<img src="images/fake-store.jpg">
+
 </div>
 
-<div class="card">
-<h3>Fake Cryptocurrency Exchanges</h3>
-<p>Used in investment scams and pig-butchering schemes.</p>
+
+<div class="timeline-item">
+
+<h3>SMS Phishing (Smishing)</h3>
+
+<p>
+Mass campaigns send text messages pretending to be banks or shipping companies with malicious login pages.
+</p>
+
+<img src="images/smishing.jpg">
+
+</div>
+
 </div>
 
 </div>
@@ -299,27 +118,46 @@ Groups targeting elderly victims and demanding payment through gift cards.
 </section>
 
 
-<!-- REAL SITES -->
+<section id="fakesites" class="section">
 
-<section id="real-sites">
+<div class="container">
 
-<h2 class="section-title">Official Legitimate Services</h2>
+<h2>Fake Website Examples</h2>
 
-<div class="grid">
+<div class="fake-grid">
 
-<div class="card">
-<h3>Official Company Support Pages</h3>
-<p>Always use verified websites when contacting support.</p>
+<div class="fake-site">
+
+<h3>secure-paypal.com</h3>
+
+<p>Fake login page impersonating PayPal.</p>
+
+<p class="real-link">Real site: paypal.com</p>
+
 </div>
 
-<div class="card">
-<h3>Government Fraud Reporting</h3>
-<p>Report scams through official reporting portals.</p>
+
+<div class="fake-site">
+
+<h3>microsoft-support-help.xyz</h3>
+
+<p>Tech support scam site showing fake virus warnings.</p>
+
+<p class="real-link">Real site: microsoft.com</p>
+
 </div>
 
-<div class="card">
-<h3>Cybersecurity Organizations</h3>
-<p>Trusted sources that track scam campaigns worldwide.</p>
+
+<div class="fake-site">
+
+<h3>amaz0n-deals.shop</h3>
+
+<p>Fraudulent shopping site using copied Amazon branding.</p>
+
+<p class="real-link">Real site: amazon.com</p>
+
+</div>
+
 </div>
 
 </div>
@@ -327,34 +165,78 @@ Groups targeting elderly victims and demanding payment through gift cards.
 </section>
 
 
-<!-- TOOLS -->
+<section id="tools" class="section dark">
 
-<section id="tools">
+<div class="container">
 
-<h2 class="section-title">Programs Often Used by Scammers</h2>
+<h2>Common Tools Used by Scammers</h2>
 
-<div class="grid">
+<div class="tools-grid">
 
-<div class="card">
-<h3>Remote Access Software</h3>
+<div class="tool">
+
+<h3>AnyDesk</h3>
+
 <p>
-Scammers often trick victims into installing remote desktop software to gain control of their computer.
+Remote desktop software abused by scammers to gain control of victims computers.
 </p>
+
 </div>
 
-<div class="card">
+<div class="tool">
+
+<h3>TeamViewer</h3>
+
+<p>
+Often used in tech support scams to remotely access devices and steal financial data.
+</p>
+
+</div>
+
+<div class="tool">
+
 <h3>Phishing Kits</h3>
+
 <p>
-Pre-built packages that generate fake login pages for banks and email services.
+Prebuilt packages that create fake login pages and capture credentials.
 </p>
+
 </div>
 
-<div class="card">
-<h3>Voice Over IP Systems</h3>
+<div class="tool">
+
+<h3>VoIP Call Systems</h3>
+
 <p>
-Allows scammers to call victims worldwide while hiding their real location.
+Scammers use VoIP and call center software to impersonate banks and tech companies.
 </p>
+
 </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="resources" class="section">
+
+<div class="container">
+
+<h2>Resources</h2>
+
+<ul class="resources">
+
+<li>How to Identify Phishing Websites</li>
+
+<li>How to Report Scams to Authorities</li>
+
+<li>How Scambaiters Safely Interact with Scammers</li>
+
+<li>Protecting Your Devices from Remote Access Fraud</li>
+
+</ul>
 
 </div>
 
@@ -363,37 +245,15 @@ Allows scammers to call victims worldwide while hiding their real location.
 
 <footer>
 
-<p>
-ScamWatch Awareness Project  
-Created to fight online fraud  
-Credit: Jeremy K.M
-</p>
+<p>© ScamWatch</p>
+
+<p>Project created for scam awareness.</p>
+
+<p class="credit">Site developed by Jeremy K.M.</p>
 
 </footer>
 
-
-<script>
-
-/* ADVANCED SCROLL EFFECT */
-
-const cards = document.querySelectorAll('.card');
-
-window.addEventListener('scroll', () => {
-
-cards.forEach(card => {
-
-const rect = card.getBoundingClientRect();
-
-if(rect.top < window.innerHeight - 100){
-card.style.transform = "translateY(0)";
-card.style.opacity = "1";
-}
-
-});
-
-});
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
