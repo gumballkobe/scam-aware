@@ -26,14 +26,12 @@
 <div class="logo">ScamWatch</div>
 
 <ul>
-
 <li><a href="#">Home</a></li>
 <li><a href="#">Scam Database</a></li>
-<li><a href="#">Fake Websites</a></li>
+<li><a href="#">Fake Sites</a></li>
 <li><a href="#">Scammer Tools</a></li>
+<li><a href="#">Investigations</a></li>
 <li><a href="#">Report Scam</a></li>
-<li><a href="#">Resources</a></li>
-
 </ul>
 
 </nav>
@@ -44,39 +42,56 @@
 
 <div class="hero-content">
 
-<h1>Expose Scammers.</h1>
+<h1>Expose Scammers</h1>
 
-<p>Tracking scams, fake websites, and fraud operations worldwide.</p>
+<p>Investigating scams, phishing networks, and fraud operations worldwide.</p>
 
 </div>
 
 </header>
 
-<div class="wave-transition">
+
+<div class="wave-wrapper">
 
 <svg viewBox="0 0 1440 320">
 
-<path fill="#0f1115" fill-opacity="1"
-d="M0,160L60,144C120,128,240,96,360,101.3C480,107,600,149,720,165.3C840,181,960,171,1080,160C1200,149,1320,139,1380,133.3L1440,128L1440,320L0,320Z"></path>
+<path id="wavePath"
+d="M0,160L80,165C160,171,320,181,480,165C640,149,800,107,960,101C1120,96,1280,128,1360,144L1440,160V320H0Z"></path>
 
 </svg>
 
 </div>
 
-<section class="section about">
 
-<h2>About ScamWatch</h2>
+<section class="stats">
 
-<p>
-ScamWatch is a research platform documenting scams, phishing attacks,
-fake websites, and fraud tools used by scammers.
-</p>
+<h2>The Global Scam Problem</h2>
+
+<div class="stat-grid">
+
+<div class="stat">
+<h1 class="counter" data-target="10000000000">0</h1>
+<p>Dollars lost to scams yearly</p>
+</div>
+
+<div class="stat">
+<h1 class="counter" data-target="2600000">0</h1>
+<p>Fraud reports filed annually</p>
+</div>
+
+<div class="stat">
+<h1 class="counter" data-target="60">0</h1>
+<p>% increase in phishing attacks</p>
+</div>
+
+</div>
 
 </section>
 
-<section class="section exposed">
 
-<h2>Common Scam Operations</h2>
+<section class="scams">
+
+<h2>Common Scam Types</h2>
 
 <div class="grid">
 
@@ -84,9 +99,9 @@ fake websites, and fraud tools used by scammers.
 
 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
 
-<h3>Phishing Attacks</h3>
+<h3>Phishing</h3>
 
-<p>Fake emails and websites stealing credentials.</p>
+<p>Fake emails and websites designed to steal passwords and banking information.</p>
 
 </div>
 
@@ -96,7 +111,7 @@ fake websites, and fraud tools used by scammers.
 
 <h3>Tech Support Scams</h3>
 
-<p>Fake virus warnings convincing victims to call scammers.</p>
+<p>Fake virus alerts convince victims to call scammers posing as Microsoft or Apple.</p>
 
 </div>
 
@@ -104,9 +119,9 @@ fake websites, and fraud tools used by scammers.
 
 <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87">
 
-<h3>Call Center Fraud</h3>
+<h3>Fake Online Stores</h3>
 
-<p>Large scam operations impersonating banks and companies.</p>
+<p>Fraud websites selling products that never arrive.</p>
 
 </div>
 
@@ -114,39 +129,66 @@ fake websites, and fraud tools used by scammers.
 
 </section>
 
-<section class="section tools">
+
+<section class="operation">
+
+<h2>Inside a Scam Operation</h2>
+
+<p>
+
+Many scams originate from organized call centers where workers follow scripts
+to impersonate banks, government agencies, and tech companies. These operations
+often use VoIP phone systems, phishing websites, and remote desktop software
+to gain control of victims computers.
+
+</p>
+
+<img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7">
+
+</section>
+
+
+<section class="tools">
 
 <h2>Tools Used by Scammers</h2>
 
 <div class="grid">
 
 <div class="tool-card">
-
-<h3>AnyDesk</h3>
-
-<p>Remote desktop software abused to control victim computers.</p>
-
+<h3>Remote Access Software</h3>
+<p>Programs like AnyDesk and TeamViewer are abused to control victim computers.</p>
 </div>
 
 <div class="tool-card">
-
-<h3>TeamViewer</h3>
-
-<p>Used in many tech support scams.</p>
-
-</div>
-
-<div class="tool-card">
-
 <h3>Phishing Kits</h3>
+<p>Prebuilt login pages that capture usernames and passwords.</p>
+</div>
 
-<p>Prebuilt fake login pages stealing passwords.</p>
-
+<div class="tool-card">
+<h3>VoIP Systems</h3>
+<p>Used by scam call centers to spoof phone numbers.</p>
 </div>
 
 </div>
 
 </section>
+
+
+<section class="protect">
+
+<h2>How to Protect Yourself</h2>
+
+<ul>
+
+<li>Never give remote access to strangers.</li>
+<li>Check website URLs carefully.</li>
+<li>Use two-factor authentication.</li>
+<li>Report suspicious calls or emails.</li>
+
+</ul>
+
+</section>
+
 
 <footer>
 
@@ -155,6 +197,7 @@ fake websites, and fraud tools used by scammers.
 <p>Developed by Jeremy K.M.</p>
 
 </footer>
+
 
 <script src="script.js"></script>
 
