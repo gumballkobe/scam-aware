@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scam Awareness Network</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0f17;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+padding:18px 50px;
+z-index:1000;
+}
+
+nav h1{
+font-weight:800;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#4fd1ff;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url("hero-placeholder.jpg");
+background-size:cover;
+background-attachment:fixed;
+}
+
+.hero h2{
+font-size:55px;
+max-width:900px;
+font-weight:800;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+opacity:.8;
+}
+
+/* SECTIONS */
+
+section{
+padding:120px 10%;
+}
+
+.section-title{
+font-size:36px;
+margin-bottom:50px;
+font-weight:700;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:#121a26;
+padding:30px;
+border-radius:12px;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+/* SCROLL PARALLAX STRIP */
+
+.parallax{
+height:300px;
+background:url("placeholder2.jpg");
+background-size:cover;
+background-attachment:fixed;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+font-weight:700;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:50px;
+background:#070a10;
+font-size:14px;
+opacity:0.7;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+nav{
+padding:15px 20px;
+}
+
+.hero h2{
+font-size:34px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+section{
+padding:100px 8%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<h1>SCAMWATCH</h1>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#exposed">Exposed</a></li>
+<li><a href="#fake-sites">Fake Sites</a></li>
+<li><a href="#real-sites">Real Services</a></li>
+<li><a href="#tools">Scammer Tools</a></li>
+</ul>
+</nav>
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div>
+<h2>Fighting Online Scams Through Awareness</h2>
+<p>Helping victims, researchers, and scambaiters stay informed.</p>
+</div>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About This Project</h2>
+
+<p>
+ScamWatch is an independent awareness project dedicated to documenting scam operations,
+educating the public, and assisting scam baiters in identifying fraudulent tactics.
+</p>
+
+<br><br>
+
+<p>
+This project tracks known scam techniques including phishing websites,
+fake technical support services, and social engineering attacks.
+</p>
+
+</section>
+
+
+<!-- PARALLAX -->
+
+<div class="parallax">
+Exposing Fraudulent Operations
+</div>
+
+
+<!-- EXPOSED SCAMMERS -->
+
+<section id="exposed">
+
+<h2 class="section-title">Recently Exposed Scammers</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="placeholder-scammer1.jpg">
+<h3>Fake Tech Support Call Centers</h3>
+<p>
+Large call centers impersonating companies like Microsoft and Apple to trick victims into paying fake repair fees.
+</p>
+</div>
+
+<div class="card">
+<img src="placeholder-scammer2.jpg">
+<h3>Phishing Infrastructure</h3>
+<p>
+Networks hosting thousands of fake login pages designed to steal passwords and financial data.
+</p>
+</div>
+
+<div class="card">
+<img src="placeholder-scammer3.jpg">
+<h3>Gift Card Fraud Rings</h3>
+<p>
+Groups targeting elderly victims and demanding payment through gift cards.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAKE SITES -->
+
+<section id="fake-sites">
+
+<h2 class="section-title">Common Scam Websites</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Fake Antivirus Support</h3>
+<p>Often appear through pop-ups claiming your computer is infected.</p>
+</div>
+
+<div class="card">
+<h3>Fake Banking Login Pages</h3>
+<p>Designed to steal login credentials through phishing.</p>
+</div>
+
+<div class="card">
+<h3>Fake Cryptocurrency Exchanges</h3>
+<p>Used in investment scams and pig-butchering schemes.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REAL SITES -->
+
+<section id="real-sites">
+
+<h2 class="section-title">Official Legitimate Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Official Company Support Pages</h3>
+<p>Always use verified websites when contacting support.</p>
+</div>
+
+<div class="card">
+<h3>Government Fraud Reporting</h3>
+<p>Report scams through official reporting portals.</p>
+</div>
+
+<div class="card">
+<h3>Cybersecurity Organizations</h3>
+<p>Trusted sources that track scam campaigns worldwide.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TOOLS -->
+
+<section id="tools">
+
+<h2 class="section-title">Programs Often Used by Scammers</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Remote Access Software</h3>
+<p>
+Scammers often trick victims into installing remote desktop software to gain control of their computer.
+</p>
+</div>
+
+<div class="card">
+<h3>Phishing Kits</h3>
+<p>
+Pre-built packages that generate fake login pages for banks and email services.
+</p>
+</div>
+
+<div class="card">
+<h3>Voice Over IP Systems</h3>
+<p>
+Allows scammers to call victims worldwide while hiding their real location.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+ScamWatch Awareness Project  
+Created to fight online fraud  
+Credit: Jeremy K.M
+</p>
+
+</footer>
+
+
+<script>
+
+/* ADVANCED SCROLL EFFECT */
+
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+
+cards.forEach(card => {
+
+const rect = card.getBoundingClientRect();
+
+if(rect.top < window.innerHeight - 100){
+card.style.transform = "translateY(0)";
+card.style.opacity = "1";
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
